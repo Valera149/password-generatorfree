@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор Паролей</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 Генератор Паролей</h1>
+        
+        <div class="settings">
+            <div class="setting-item">
+                <label for="length">Длина пароля: <span id="length-value">12</span></label>
+                <input type="range" id="length" min="4" max="32" value="12">
+            </div>
+            
+            <div class="setting-item">
+                <label>
+                    <input type="checkbox" id="uppercase" checked>
+                    Заглавные буквы (ABC)
+                </label>
+            </div>
+            
+            <div class="setting-item">
+                <label>
+                    <input type="checkbox" id="numbers" checked>
+                    Цифры (123)
+                </label>
+            </div>
+            
+            <div class="setting-item">
+                <label>
+                    <input type="checkbox" id="symbols" checked>
+                    Символы (!@#)
+                </label>
+            </div>
+        </div>
+
+        <button id="generate-btn" class="generate-btn">Сгенерировать пароль</button>
+        
+        <div class="password-result">
+            <div class="password-display">
+                <span id="password">Нажмите кнопку выше</span>
+                <button id="copy-btn" class="copy-btn">📋</button>
+            </div>
+            <div id="strength-meter" class="strength-meter">
+                <div class="strength-bar"></div>
+                <span class="strength-text">Сложность: -</span>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="save-btn" class="action-btn">💾 Сохранить</button>
+            <button id="history-btn" class="action-btn">📚 История</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
