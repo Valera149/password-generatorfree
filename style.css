@@ -119,7 +119,7 @@ input[type="checkbox"] {
 .action-btn {
     flex: 1;
     padding: 12px;
-    background: var(--tg-theme-secondary-bg-color, #f0f0f0);
+    background: var(--tg-theme-secondary-bg-color, #fc0000);
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -130,4 +130,5 @@ input[type="checkbox"] {
 .strength-weak .strength-bar { background: #ff4444; width: 25%; }
 .strength-medium .strength-bar { background: #ffbb33; width: 50%; }
 .strength-strong .strength-bar { background: #00C851; width: 75%; }
+
 .strength-very-strong .strength-bar { background: #007E33; width: 100%; }
